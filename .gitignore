@@ -5,6 +5,8 @@
 start/azure-function-manager/obj/azure-function-manager.csproj.nuget.dgspec.json
 start/azure-function-manager/obj/azure-function-manager.csproj.nuget.g.props
 start/azure-function-manager/obj/azure-function-manager.csproj.nuget.g.targets
+start/azure-function-manager/obj
+start/azure-function-manager/bin
 start/azure-function-manager/obj/project.assets.json
 start/azure-function-manager/obj/project.nuget.cache
 start/azure-function-entities/obj/azure-function-entities.csproj.nuget.dgspec.json
@@ -12,3 +14,5 @@ start/azure-function-entities/obj/azure-function-entities.csproj.nuget.g.props
 start/azure-function-entities/obj/azure-function-entities.csproj.nuget.g.targets
 start/azure-function-entities/obj/project.assets.json
 start/azure-function-entities/obj/project.nuget.cache
+start/azure-function-entities/obj
+start/azure-function-entities/bin

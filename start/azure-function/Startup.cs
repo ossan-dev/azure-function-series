@@ -1,3 +1,8 @@
+using azure_function;
+using azure_function_manager;
+using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
+
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace azure_function
 {
@@ -5,7 +10,7 @@ namespace azure_function
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-
+            builder.Services.AddScoped<IGreetingsService, GreetingsService>();
         }
 
         public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)

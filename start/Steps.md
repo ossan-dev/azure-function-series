@@ -20,7 +20,7 @@
 1. change in csproj from net5.0 to netstandard2.1
 1. `dotnet sln .\start.sln add .\azure-function-entities\azure-function-entities.csproj`
 1. git push
-1. create record Output.cs in entities (folder "models") with props:
+1. create class Output.cs in entities (folder "models") with props:
    - Message
    - ApiKey
 1. create service GreetingsService.cs in managers (folder "services") with methods:
@@ -32,9 +32,12 @@
    1. in azure function add ref to manager proj
    1. in manager add ref to entities proj
 1. inject IGreetingsService in TimerTriggerFunc.cs
+1. install Microsoft.Azure.Functions.Extensions in azure func proj
 1. create Startup.cs in func proj
 1. inherit from FunctionsStartup
 1. decorate namespace with `[assembly: FunctionsStartup(typeof(Startup))]`
+1. add file to .gitignore at start folder level
 1. override Configure()
    1. register service IGreetingsService
+1. create output class in TimerTriggerFunc and log the instance
 1. override ConfigureAppConfiguration()
