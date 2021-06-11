@@ -2,3 +2,8 @@
 .vscode/launch.json
 .vscode/settings.json
 .vscode/tasks.json
+start/azure-function-manager/obj/azure-function-manager.csproj.nuget.dgspec.json
+start/azure-function-manager/obj/azure-function-manager.csproj.nuget.g.props
+start/azure-function-manager/obj/azure-function-manager.csproj.nuget.g.targets
+start/azure-function-manager/obj/project.assets.json
+start/azure-function-manager/obj/project.nuget.cache
