@@ -47,3 +47,4 @@
    1. get context from builder
    1. initialize Configuration prop (bring in the necessary ns)
 1. use IConfiguration in TimerTriggerFunc by injecting it in ctor
+1. use %TimerCron% in local.settings.json
