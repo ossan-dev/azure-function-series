@@ -13,5 +13,17 @@
 1. in "start" add "azure-function-manager"
 1. cd in the newly created folder
 1. `dotnet new classlib`
+1. change in csproj from net5.0 to netstandard2.1
 1. `dotnet sln .\start.sln add .\azure-function-manager\azure-function-manager.csproj`
-1.
+1. cd in start and mkdir azure-function-entities
+1. `dotnet new classlib`
+1. change in csproj from net5.0 to netstandard2.1
+1. `dotnet sln .\start.sln add .\azure-function-entities\azure-function-entities.csproj`
+1. git push
+
+1. make the func not static & create its constructor
+1. create Startup.cs in func proj
+1. inherit from FunctionsStartup
+1. decorate namespace with `[assembly: FunctionsStartup(typeof(Startup))]`
+1. override Configure()
+1. override ConfigureAppConfiguration()
