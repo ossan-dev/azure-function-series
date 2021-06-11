@@ -28,9 +28,13 @@
 1. pull up its interface
 1. move interface to its own file
 1. make the func not static & create its constructor
+1. add refs among projs
+   1. in azure function add ref to manager proj
+   1. in manager add ref to entities proj
 1. inject IGreetingsService in TimerTriggerFunc.cs
 1. create Startup.cs in func proj
 1. inherit from FunctionsStartup
 1. decorate namespace with `[assembly: FunctionsStartup(typeof(Startup))]`
 1. override Configure()
+   1. register service IGreetingsService
 1. override ConfigureAppConfiguration()

@@ -5,4 +5,8 @@
     <RootNamespace>azure_function_manager</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../azure-function-entities/azure-function-entities.csproj"/>
+  </ItemGroup>
+
 </Project>
