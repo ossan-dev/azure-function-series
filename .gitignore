@@ -16,3 +16,8 @@ start/azure-function-entities/obj/project.assets.json
 start/azure-function-entities/obj/project.nuget.cache
 start/azure-function-entities/obj
 start/azure-function-entities/bin
+.editorconfig
+start/.vscode/extensions.json
+start/.vscode/launch.json
+start/.vscode/settings.json
+start/.vscode/tasks.json

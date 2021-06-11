@@ -41,3 +41,9 @@
    1. register service IGreetingsService
 1. create output class in TimerTriggerFunc and log the instance
 1. override ConfigureAppConfiguration()
+1. add Microsoft.Extensions.Configuration.UserSecrets in azure-function
+1. add secret to azure-function proj user secrets file
+1. in startup.cs > ConfigureAppConfiguration()
+   1. get context from builder
+   1. initialize Configuration prop (bring in the necessary ns)
+1. use IConfiguration in TimerTriggerFunc by injecting it in ctor
