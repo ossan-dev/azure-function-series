@@ -67,4 +67,38 @@ Press F5 and BOOOOM 🤩. Your function is up and running and every 5 seconds u 
 
 ### Setup the other projects
 
-Once we tested successfully that the boilerplate is doing well we must setup all the remaining projects and the solution file.
+Once we tested successfully that the boilerplate is doing well we must setup all the remaining projects and the solution file.  
+First add the function proj to the folder by issuing this command (make sure to be in "start" folder):
+
+```
+dotnet sln .\start.sln add .\azure-function\azure-function.csproj
+```
+
+After that we must add two projects: one for entities and one for managers.
+Note: this "Overengineering" is only done for demo purposes. Maybe, in your real-life scenario it fits well and u can use this same approach.  
+In "start" folder create a folder named "azure-function-entities", in your terminal u can type:
+
+```
+mkdir azure-function-entities
+```
+
+Now navigate into the newly created folder. And issue the following command to create a class library project:
+
+```
+dotnet new classlib
+```
+
+Remove the auto-generated Class1.cs file and make this change in the .csproj file:
+
+```
+<TargetFramework>netstandard2.1</TargetFramework>
+```
+
+This is done mainly because we're not yet using the .NET 5.0 stuff as our func project is still .NET Core 3.1 so we stick with .NET Standard 2.1 for class library file.  
+Now we must add the class library proj to our solution file (warning: issue this command in the start folder):
+
+```
+dotnet sln .\start.sln add .\azure-function-entities\azure-function-entities.csproj
+```
+
+Repeat these steps also for another project called "azure-function-managers".
