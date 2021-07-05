@@ -23,7 +23,7 @@ namespace azure_function
         public void Run([TimerTrigger("%TimerCron%")] TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
-            var output = new Output("Message from TimerTriggerFunc()", _configuration.GetValue<string>("ApiKey"));
+            var output = new Output(_greetingsService.SayHello("ivan"), _configuration.GetValue<string>("ApiKey"));
             log.LogInformation($"Message: {output.Message}");
             log.LogInformation($"ApiKey: {output.ApiKey}");
         }
