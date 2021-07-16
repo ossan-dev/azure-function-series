@@ -21,3 +21,8 @@ start/.vscode/extensions.json
 start/.vscode/launch.json
 start/.vscode/settings.json
 start/.vscode/tasks.json
+end/.vscode/
+end/azure-function-manager/obj
+end/azure-function-manager/bin
+end/azure-function-entities/obj
+end/azure-function-entities/bin
