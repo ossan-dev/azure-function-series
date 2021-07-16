@@ -22,7 +22,8 @@ start/.vscode/launch.json
 start/.vscode/settings.json
 start/.vscode/tasks.json
 end/.vscode/
-end/azure-function-manager/obj
-end/azure-function-manager/bin
+end/azure-function-managers/obj
+end/azure-function-managers/bin
 end/azure-function-entities/obj
 end/azure-function-entities/bin
+end/azure-function-managers/bin/Debug/net5.0/azure-function-entities.dll
