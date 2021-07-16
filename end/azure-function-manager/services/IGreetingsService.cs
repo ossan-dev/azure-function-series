@@ -1,4 +1,4 @@
-namespace azure_function_manager
+namespace azure_function_managers.services
 {
     public interface IGreetingsService
     {

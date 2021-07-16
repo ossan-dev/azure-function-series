@@ -1,4 +1,4 @@
-using azure_function_manager;
+using azure_function_managers.services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
