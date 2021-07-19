@@ -13,7 +13,7 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../azure-function-manager/azure-function-manager.csproj"/>
+    <ProjectReference Include="../azure-function-managers/azure-function-managers.csproj"/>
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function", "azure-function\azure-function.csproj", "{20106127-1A8A-4DD1-BEBB-9E643BC1BA8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-manager", "azure-function-manager\azure-function-manager.csproj", "{8FF3FC85-1A88-4C99-AA0A-DA02BDE7C0E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-managers", "azure-function-managers\azure-function-managers.csproj", "{8FF3FC85-1A88-4C99-AA0A-DA02BDE7C0E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-entities", "azure-function-entities\azure-function-entities.csproj", "{54F16AB4-0660-475D-8A93-70A32DCEEA65}"
 EndProject
